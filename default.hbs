@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html lang="en">
+	
+	<head>
+	
+		{{! title !}}
+		<title>{{meta_title}}</title>
+		<link rel="favicon" href="{{asset '/favicon.ico'}}">
+		
+		{{! meta !}}
+		<meta charset="utf-8">
+		<meta name="description" content="{{meta_description}}">
+	
+		{{! styles !}}
+		<link rel="stylesheet" type="text/css" media="screen" href="{{asset '/styles/main.css'}}">
+		<link rel="stylesheet" type="text/css" media="print" href="{{asset '/styles/print.css'}}">
+		
+		{{! scripts !}}
+		<script type="text/javascript" src="{{asset '/scripts/jquery.js'}}"></script>
+		<script type="text/javascript" src="{{asset '/scripts/main.js'}}"></script>
+	
+	</head>
+	
+	<body class="{{body_class}}">
+	
+		{{! header !}}
+		<header id="header">
+			<h1><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+			<p>{{@blog.description}}</p>
+		</header>
+		
+		{{! content !}}
+		<main id="content">
+			{{{body}}}
+		</main>
+		
+		{{! footer !}}
+		<footer id="footer">
+			<section id="copyright">&copy; {{date format='YYYY'}} <a href="{{@blog.url}}">{{@blog.title}}</a>. All rights reserved.</section>
+			<section id="poweredby">Proudly powered by <a href="http://ghost.org" target="_blank">Ghost</a>.</section>
+		</footer>
+	
+	</body>
+	
+</html>

@@ -1,0 +1,19 @@
+{{!< default}}
+
+{{#foreach posts}}
+<article id="{{id}}" class="{{post_class}}">
+
+	<h3 class="post-title"><a href="{{url}}">{{title}}</a></h3>
+	<time class="post-stamp">{{date published_at format='Do MMMM YYYY'}}</time>
+	<p class="post-description">{{excerpt characters='100'}}</p>
+	
+	{{#if tags}}
+	<ul id="post-tags">
+		{{#foreach tags}}<li>{{name}}</li>{{/foreach}}
+	</ul>
+	{{/if}}
+
+</article>
+{{/foreach}}
+
+{{pagination}}
