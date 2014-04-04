@@ -1,0 +1,4 @@
+.single-article section > p:first-child {
+  font-size: 1;
+  font-weight: normal;
+}
