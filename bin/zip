@@ -1,1 +1,5 @@
-zip -r toast-ntl.zip .
+(
+  set -ex
+  cd ..
+  zip -r toast-ntl/toast-ntl.zip toast-ntl
+)
