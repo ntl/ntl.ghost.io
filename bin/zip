@@ -1,5 +1,5 @@
 (
   set -ex
   cd ..
-  zip --exclude=*.git* -r toast-ntl/toast-ntl.zip toast-ntl
+  zip --exclude=*bin* --exclude=*.git* -r toast-ntl/toast-ntl.zip toast-ntl
 )
