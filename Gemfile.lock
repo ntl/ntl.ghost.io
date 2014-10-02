@@ -1,0 +1,66 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.3.6)
+    celluloid (0.16.0)
+      timers (~> 4.0.0)
+    charlock_holmes (0.7.3)
+    daemons (1.1.9)
+    em-websocket (0.3.8)
+      addressable (>= 2.1.1)
+      eventmachine (>= 0.12.9)
+    escape_utils (1.0.1)
+    eventmachine (1.0.3)
+    ffi (1.9.5)
+    gfm_live_preview (0.9.7)
+      github-linguist
+      github-markdown
+      listen
+      sinatra
+      sinatra-websocket
+    github-linguist (3.1.5)
+      charlock_holmes (~> 0.7.3)
+      escape_utils (~> 1.0.1)
+      mime-types (~> 1.19)
+      pygments.rb (~> 0.6.0)
+      rugged (~> 0.21.0)
+    github-markdown (0.6.7)
+    hitimes (1.2.2)
+    listen (2.7.11)
+      celluloid (>= 0.15.2)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9)
+    mime-types (1.25.1)
+    posix-spawn (0.3.9)
+    pygments.rb (0.6.0)
+      posix-spawn (~> 0.3.6)
+      yajl-ruby (~> 1.1.0)
+    rack (1.5.2)
+    rack-protection (1.5.3)
+      rack
+    rb-fsevent (0.9.4)
+    rb-inotify (0.9.5)
+      ffi (>= 0.5.0)
+    rugged (0.21.0)
+    sinatra (1.4.5)
+      rack (~> 1.4)
+      rack-protection (~> 1.4)
+      tilt (~> 1.3, >= 1.3.4)
+    sinatra-websocket (0.3.0)
+      em-websocket (~> 0.3.6)
+      eventmachine
+      thin (>= 1.3.1)
+    thin (1.6.3)
+      daemons (~> 1.0, >= 1.0.9)
+      eventmachine (~> 1.0)
+      rack (~> 1.0)
+    tilt (1.4.1)
+    timers (4.0.1)
+      hitimes
+    yajl-ruby (1.1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  gfm_live_preview
